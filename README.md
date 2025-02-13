@@ -43,6 +43,7 @@ These were how the data was cleaned using Excel and Power Query.
 3. The name column was transformed to have case consistency
 4. misspelled and other unnecessary values, in the city, employed, and education columns were properly formatted for consistency across the columns
 5. All nulls, unknowns, empty, and non, were taken care of
-6. I came up with a formula to predict the ages of all the unknown, the ages from 0-16 years. In the US the age age to graduate from high school is 17-18. So I worked with 17.
+6. I devised a formula to predict the ages of all the unknowns, from 0 to 16. In the US, the average age to graduate from high school is 17 to 18, so I worked with 17.
+
    Here is the formula: (=IF(OR([@Age2]<17,[@Age2]="unknown"), IF(OR([@Education]="Unspecified", [@Education]="Bachelor's", [@Education]="Associate", [@Education]="PhD", [@Education]="Master's", [@Education]="High School"), AVERAGE([Age2], AVERAGEIFS([Age2],[Education],[@Education]))), [@Age2]))
 
