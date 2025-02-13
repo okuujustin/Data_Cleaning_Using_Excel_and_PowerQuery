@@ -12,6 +12,7 @@
 The essence of this project is to clean this data for analysis and create a detailed report.
 
 
+
 #### Below is what the  data looked like initially
 
 ![image](Dirty_data.PNG)
@@ -20,5 +21,9 @@ The essence of this project is to clean this data for analysis and create a deta
 
 ![image](Cleaning_data.PNG)
 
+### STEPS TAKEN TO CLEAN THE DATA
+1. Exploring the data for a better understanding
+2. Choosing the right tool for fast delivery
+3. Cleaning the data ready for analysis
 
 healthcare-dirty_and_cleaned_data.xlsx
