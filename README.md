@@ -26,4 +26,23 @@ The essence of this project is to clean this data for analysis and create a deta
 2. Choosing the right tool for fast delivery
 3. Cleaning the data ready for analysis
 
-healthcare-dirty_and_cleaned_data.xlsx
+
+### EXPLORING THE DATA
+These were my findings before was effected
+1. There were duplicate rows in the dataset
+2. There were inconsistencies in the capitalization of a few columns like Name and country columns
+3. comparing the education and age columns, I saw that one age distribution was incorrect. example someone who has a PhD and his/her age is showing 2 years old.
+4. The date column consists of different date types and data types
+5. There were nulls, unknowns, empty, N/A, and inconsistencies in the information cited in the Education, Salary, and Employment columns.
+
+
+### DATA CLEANING PROCESS
+These were how the data was cleaned using Excel and Power Query.
+1. date column values were transformed to short date type
+2. Duplicates were removed to focus on distinct values to avoid errors in the analysis
+3. The name column was transformed to have case consistency
+4. misspelled and other unnecessary values, in the city, employed, and education columns were properly formatted for consistency across the columns
+5. All nulls, unknowns, empty, and non, were taken care of
+6. I came up with a formula to predict the ages of all the unknown, the ages from 0-16 years. In the US the age age to graduate from high school is 17-18. So I worked with 17.
+   Here is the formula: (=IF(OR([@Age2]<17,[@Age2]="unknown"), IF(OR([@Education]="Unspecified", [@Education]="Bachelor's", [@Education]="Associate", [@Education]="PhD", [@Education]="Master's", [@Education]="High School"), AVERAGE([Age2], AVERAGEIFS([Age2],[Education],[@Education]))), [@Age2]))
+
