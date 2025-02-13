@@ -10,7 +10,13 @@
    - 
 ## EXECUTIVE SUMMARY
 The essence of this project is to clean this data for analysis and create a detailed report.
-Below is what the  data looked like initially
+
+
+#### Below is what the  data looked like initially
+
+![image](Dirty_data.PNG)
+
+#### This is the data after proper cleaning
 
 ![image](Cleaning_data.PNG)
 
